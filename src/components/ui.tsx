@@ -62,7 +62,7 @@ export function Badge({ children, tone = "gold" }: { children: ReactNode; tone?:
     grey: "border-white/15 bg-white/5 text-mute",
     red: "border-rose-400/40 bg-rose-400/10 text-rose-200",
   } as const;
-  return <span className={`inline-block rounded-full border px-2.5 py-0.5 text-[11px] font-medium ${map[tone]}`}>{children}</span>;
+  return <span className={`inline-block shrink-0 whitespace-nowrap rounded-full border px-2.5 py-0.5 text-[11px] font-medium ${map[tone]}`}>{children}</span>;
 }
 
 export function SlideShell({
